@@ -1,0 +1,11 @@
+.content > section {
+    width: 100%;
+}
+
+#section-first {
+    border-radius: 5px 5px 0px 0px;
+}
+
+#section-last {
+    border-radius: 0px 0px 5px 5px;
+}
