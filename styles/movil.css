@@ -1,11 +1,37 @@
-.content > section {
+#pc-version {
+    display: none;
+}
+
+#movil-version {
+    width: 100%;
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.content > div > section {
     width: 100%;
 }
 
-#section-first {
+.section-first {
     border-radius: 5px 5px 0px 0px;
 }
 
-#section-last {
+.section-last {
     border-radius: 0px 0px 5px 5px;
+}
+
+#position-img-2 {
+    background-position: right;
+}
+
+.shine-img:hover {
+    filter: brightness(1.3);
+}
+
+.shine:hover {
+    background-color: #f0906b;
 }

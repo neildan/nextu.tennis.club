@@ -6,93 +6,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" media="(max-width: 768px)" href="./styles/movil.css" />
-    <link rel="stylesheet" media="(min-width: 769px)" href="./styles/pc.css" />
+    <link rel="stylesheet" media="(max-width: 767px)" href="./styles/movil.css" />
+    <link rel="stylesheet" media="(min-width: 767px)" href="./styles/pc.css" />
     <title>Tenis Club</title>
 </head>
 
 <body>
     <div class="content">
         <h1>Tenis Club</h1>
-        <section id="section-first">
-            <table id="table-first">
-                <tr>
-                    <td colspan="2" class="title">
-                        <h3>Bienvenido a la página web de tu Club de Tenis</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td rowspan="2" id="img-first">
-                        <img src="./img/woman-1.jpg" width="100%" alt="tenis img 1">
-                    </td>
-                    <td>
-                        <h3>Productos</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h3>Aprende sobre las reglas del Tenis</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <h3>Reservar clase</h3>
-                    </td>
-                </tr>
-            </table>
-        </section>
-        <section id="section-last">
-            <table id="table-first">
-                <tr>
-                    <td colspan="2" class="title">
-                        <h3>Horario</h3>
-                        <p>Lunes a viernes 9:00 a.m - 8:00 p.m</p>
-                        <p>Sábados y domingos 9:00 a.m - 10:00 p.m</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h3>Resultado del último juego</h3>
-                        <table>
-                            <tr>
-                                <th>Nombre</th>
-                                <th>Set 1</th>
-                                <th>Set 2</th>
-                                <th>Set 3</th>
-                            </tr>
-                            <tr>
-                                <td>Jokovic</td>
-                                <td>2</td>
-                                <td>6</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>Nadal</td>
-                                <td>0</td>
-                                <td>2</td>
-                                <td>2</td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td rowspan="2" id="img-last">
-                        <img src="./img/woman-2.jpg" width="100%" alt="tenis img 2">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h3>Entrada de blog: ¿Cómo calentar antes de un entrenamiento de Tenis?...</h3>
-                        <a href="#">Leer más</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <h3>Estamos ubicados en la calle Monserrat, 08970. Barcelona</h3>
-                    </td>
-                </tr>
-            </table>
-        </section>
+        <div id="pc-version">
+            <section class="section-first">
+                <table>
+                    <tr>
+                        <td colspan="2" class="box change-background-color">
+                            <h3>Bienvenido a la página web de tu Club de Tenis</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="img-vertical img-1">
+                            Clases Grupales
+                        </td>
+                        <td class="box" id="products">
+                            <h3>Productos</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="box img-tenis">
+                            <h3>Aprende sobre las reglas del Tenis</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="box change-background-color" id="reserve">
+                            <h3>🎾 Reservar clase 🏸</h3>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section class="section-last">
+                <table>
+                    <tr>
+                        <td colspan="2" class="box change-background-color">
+                            <h3>Horario</h3>
+                            <p>Lunes a viernes 9:00 a.m - 8:00 p.m</p>
+                            <p>Sábados y domingos 9:00 a.m - 10:00 p.m</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="box">
+                            <h3>Resultado del último juego</h3>
+                            <div class="table-results">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Set 1</th>
+                                            <th>Set 2</th>
+                                            <th>Set 3</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Jokovic</td>
+                                            <td>2</td>
+                                            <td>6</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nadal</td>
+                                            <td>0</td>
+                                            <td>2</td>
+                                            <td>2</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                        <td rowspan="2" class="img-vertical img-2">
+                            Clases privadas
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="box" id="blog">
+                            <h3>Entrada de blog: ¿Cómo calentar antes de un entrenamiento de Tenis?...</h3>
+                            <a target="_blank" href="https://github.com/neildan/nextu.tennis.club">Leer más</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="box img-tenis-2">
+                            <h3>Estamos ubicados en la calle Monserrat, 08970. Barcelona</h3>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+
+        <div id="movil-version">
+            <section class="section-first">
+                <table>
+                    <tr>
+                        <td rowspan="2" class="img-vertical img-tenis shine-img"></td>
+                        <td class="box shine">
+                            <h3>Bienvenido a la página web de tu Club de Tenis</h3>
+                        </td>
+                        <td rowspan="2" class="img-vertical img-1 shine-img"></td>
+                    </tr>
+                    <tr>
+                        <td class="box shine">
+                            <p>Horario:</p>
+                            <p>L-V 9a.m - 8p.m</p>
+                            <p>S-D 9a.m - 10p.m</p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section class="section-last">
+                <table>
+                    <tr>
+                        <td rowspan="2" class="img-vertical img-2 shine-img"></td>
+                        <td class="box shine">
+                            <p>Agenda aquí tus clases grupales y privadas</p>
+                        </td>
+                        <td rowspan="2" class="img-vertical img-tenis-2 shine-img" id="position-img-2"></td>
+                    </tr>
+                    <tr>
+                        <td class="box shine">
+                            <p>Estamos ubicados en la calle Monserrat, 08970. Barcelona</p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </div>
     </div>
-    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
